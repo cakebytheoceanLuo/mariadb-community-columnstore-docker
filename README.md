@@ -1,3 +1,15 @@
+# Dev Docker
+
+```bash
+git clone git@github.com:cakebytheoceanLuo/mariadb-community-columnstore-docker.git
+cd mariadb-community-columnstore-docker
+sudo docker build -t mariadb/columnstore_dev .
+sudo docker run -d -p 3306:3306 --name mdb -i -t mariadb/columnstore_dev
+sudo docker exec -it mdb bash 
+```
+
+---
+
 ![logo](https://raw.githubusercontent.com/mariadb-corporation/mariadb-community-columnstore-docker/master/MDB-HLogo_RGB.jpg)
 
 # MariaDB 10.6 Community Server
